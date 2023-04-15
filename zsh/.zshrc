@@ -97,6 +97,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 alias vim="nvim"
+alias v="nvim "
+
+alias t="tmux"
+alias tns="tmux new-session -s "
+alias tas="tmux attach-session -t "
+alias tks="tmux kill-session -t "
+alias tls="tmux ls"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

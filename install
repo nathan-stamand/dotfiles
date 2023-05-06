@@ -19,5 +19,8 @@ ln -s $DOTFILES/xbindkeys/.xbindkeysrc $HOME/.xbindkeysrc
 rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
 
+rm -rf $HOME/config/nvim/lua/user
+ln -s $DOTFILES/astronvim_user $HOME/.config/nvim/lua/user
+
 rm -rf $HOME/.config/phpactor
 ln -s $DOTFILES/phpactor $HOME/.config/phpactor

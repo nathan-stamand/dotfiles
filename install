@@ -24,3 +24,6 @@ ln -s $DOTFILES/astronvim_user $HOME/.config/nvim/lua/user
 
 rm -rf $HOME/.config/phpactor
 ln -s $DOTFILES/phpactor $HOME/.config/phpactor
+
+rm -rf $HOME/.phpcs.xml
+ln -s $DOTFILES/.phpcs.xml $HOME/.phpcs.xml

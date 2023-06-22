@@ -96,16 +96,34 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+# vim / nvim
 alias vim="nvim"
-alias v="nvim "
+alias v="nvim"
 
+# tmux
 alias t="tmux"
-alias tns="tmux new-session -s "
-alias tas="tmux attach-session -t "
-alias tks="tmux kill-session -t "
+alias tns="tmux new-session -s"
+alias tas="tmux attach-session -t"
+alias tks="tmux kill-session -t"
 alias tls="tmux ls"
+
+# docker / docker-compose
+alias d="docker";
+alias dc="docker-compose";
+alias dcu="docker-compose up";
+alias dcud="docker-compose up -d";
+alias dcd="docker-compose down";
+alias dce="docker-compose exec -it";
+alias dim="docker image";
+alias dco="docker container";
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="$PATH:/home/nathansa/.config/composer/vendor/bin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+# RVM bash completion
+[[ -r "$HOME/.rvm/scripts/completion" ]] && source "$HOME/.rvm/scripts/completion"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

@@ -2,6 +2,9 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# use feh to set background image on desktop
+exec feh --bg-scale /home/nathansa/Pictures/11.jpg
+
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font

@@ -215,6 +215,13 @@ require("lazy").setup({
             'saadparwaiz1/cmp_luasnip',
             'onsails/lspkind-nvim',
         },
+    },
+    {
+        -- All closing buffers without closing the split window.
+        'famiu/bufdelete.nvim',
+        config = function()
+            vim.keymap.set('n', '<Leader>q', ':Bdelete<CR>')
+            vim.keymap.set('n', '<Leader>Q', ':bufdo Bdelete<CR>')
+        end,
     }
-
 })

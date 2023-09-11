@@ -21,9 +21,3 @@ ln -s $DOTFILES/nvim $HOME/.config/nvim
 
 rm -rf $HOME/.config/phpactor
 ln -s $DOTFILES/phpactor $HOME/.config/phpactor
-
-rm -rf $HOME/.phpcs.xml
-ln -s $DOTFILES/.phpcs.xml $HOME/.phpcs.xml
-
-rm -rf $HOME/.config/rubocop/config.yml
-ln -s $DOTFILES/.rubocop.yml $HOME/.config/rubocop/config.yml

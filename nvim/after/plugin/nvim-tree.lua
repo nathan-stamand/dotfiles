@@ -1,26 +1,34 @@
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
-
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true, noremap = true })
-
--- set termguicolors to enable highlight groups
-vim.opt.termguicolors = true
-
--- empty setup using defaults
-require("nvim-tree").setup()
-
--- OR setup with some options
-require("nvim-tree").setup({
-    sort_by = "case_sensitive",
-    view = {
-        width = 30,
+require('nvim-tree').setup({
+  git = {
+    ignore = false,
+  },
+  view = {
+    width = 40,
+  },
+  renderer = {
+    highlight_opened_files = 'name',
+    group_empty = true,
+    icons = {
+      show = {
+        folder_arrow = true,
+      },
+      glyphs = {
+        git = {
+          unstaged = "◌",
+          untracked = "󰐕",
+          ignored = "󱙄",
+        },
+      },
     },
-    renderer = {
-        group_empty = true,
+    indent_markers = {
+      enable = true,
     },
-    filters = {
-        dotfiles = true,
+  },
+  filters = {
+    custom = {
+      "^\\.git$",
     },
+  },
 })
+
+vim.keymap.set('n', '<Leader>e', ':NvimTreeToggle<CR>', { silent = true })

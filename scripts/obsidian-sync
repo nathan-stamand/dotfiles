@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+CURRENT_DIR=$(pwd)
+
+echo $CURRENT_DIR
+
+cd ~/obsidian;
+
+git add .
+
+git commit -m "laptop sync";
+
+git push --set-upstream origin $(git branch --show-current)
+
+git pull
+
+cd $CURRENT_DIR

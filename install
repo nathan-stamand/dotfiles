@@ -8,8 +8,14 @@ ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
 rm -rf $HOME/.zsh_functions
 ln -s $DOTFILES/zsh/.zsh_functions $HOME/.zsh_functions
 
+rm -rf $HOME/.zshenv
+ln -s $DOTFILES/zsh/.zshenv $HOME/.zshenv
+
 rm -rf $HOME/.config/alacritty
 ln -s $DOTFILES/alacritty $HOME/.config/alacritty
 
 rm -rf $HOME/.tmux.conf
 ln -s $DOTFILES/.tmux.conf $HOME/.tmux.conf
+
+rm -rf $HOME/.config/tms/config.toml
+ln -s $DOTFILES/tms/config.toml $HOME/.config/tms/config.toml

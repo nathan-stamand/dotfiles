@@ -1,0 +1,11 @@
+[[search_dirs]]
+path = "/home/nst.amand/dotfiles"
+depth = 10
+
+[[search_dirs]]
+path = "/home/nst.amand/ansible"
+depth = 10
+
+[[search_dirs]]
+path = "/home/nst.amand/projects"
+depth = 10
